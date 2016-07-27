@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int width = size.x;
         int height = size.y;
 
-        Toast.makeText(MainActivity.this, "width : " + width + ", height : " + height,
+        Toast.makeText(MainActivity.this, "WIDTH : " + width + ", HEIGHT : " + height,
                 Toast.LENGTH_SHORT).show();
     }
 
