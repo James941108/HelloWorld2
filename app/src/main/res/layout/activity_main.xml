@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.james.helloworld2.MainActivity">
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/ninepatch_lab"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="0" />
+
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/ninepatch_lab"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/textViewResults"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:freezesText="true"
+                    android:text="= 0" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calculate" />
+
+            <CheckBox
+                android:id="@+id/cbIAgree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="I agree" />
+
+            <RadioGroup
+                android:id="@+id/rgOperator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/rbPlus"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/rbPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+" />
+
+                <RadioButton
+                    android:id="@+id/rbMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/radio_button_margin_left"
+                    android:text="-" />
+
+                <RadioButton
+                    android:id="@+id/rbMultiply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/radio_button_margin_left"
+                    android:text="x" />
+
+                <RadioButton
+                    android:id="@+id/rbDevide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/radio_button_margin_left"
+                    android:text="/" />
+            </RadioGroup>
+
+            <ProgressBar
+                style="@style/ProgressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+
+            <include layout="@layout/sample_bar" />
+
+            <com.example.james.helloworld2.CustomViewGroup
+                android:id="@+id/customViewGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.example.james.helloworld2.CustomViewGroup
+                android:id="@+id/customViewGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.example.james.helloworld2.CustomView
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="160dp" />
+
+            <com.example.james.helloworld2.CustomView
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                app:isBlue="true"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.inthecheesefactory.thecheeselibrary.widget.AdjustableImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/selector_btn_default"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_launcher" />
+
+                <com.inthecheesefactory.thecheeselibrary.widget.AdjustableImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_launcher" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
