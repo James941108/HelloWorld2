@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             tvResult.setText(result + "");
 
-            Log.d("Calculation", "Result = " + result);
+            Log.d("Calculations", "Result = " + result);
             Toast.makeText(MainActivity.this, "Result = " + result, Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(MainActivity.this,
