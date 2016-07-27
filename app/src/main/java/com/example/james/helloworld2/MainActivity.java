@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         customViewGroup1 = (CustomViewGroup) findViewById(R.id.customViewGroup1);
         customViewGroup2 = (CustomViewGroup) findViewById(R.id.customViewGroup2);
 
-        customViewGroup1.setButtonText("HELLO,,,");
+        customViewGroup1.setButtonText("HELLO...");
         customViewGroup1.setButtonText("WORLD!!!");
     }
 
