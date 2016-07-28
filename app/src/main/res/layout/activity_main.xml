@@ -123,7 +123,8 @@
             <com.example.james.helloworld2.CustomView
                 android:id="@+id/view1"
                 android:layout_width="match_parent"
-                android:layout_height="160dp" />
+                android:layout_height="160dp"
+                app:isBlue="true"/>
 
             <com.example.james.helloworld2.CustomView
                 android:id="@+id/view2"
