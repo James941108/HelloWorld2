@@ -65,26 +65,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         editText1 = (EditText) findViewById(R.id.editText1);
         editText2 = (EditText) findViewById(R.id.editText2);
 
-//        editText1.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-//            @Override
-//            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-//                if (actionId == EditorInfo.IME_ACTION_DONE){
-//                    tvResult.setText((editText1 + editText2).getText());                    return true;
-//                }
-//                return false;
-//            }
-//        });
-//
-//        editText1.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-//            @Override
-//            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-//                if (actionId == EditorInfo.IME_ACTION_DONE){
-//                    tvResult.setText((editText1 + editText2).getText());                    return true;
-//                }
-//                return false;
-//            }
-//        });
-
         btnCalculate = (Button) findViewById(R.id.btnCalculate);
         btnCalculate.setOnClickListener(this);
 
