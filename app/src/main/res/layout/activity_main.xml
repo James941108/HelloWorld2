@@ -118,7 +118,8 @@
             <com.example.james.helloworld2.CustomViewGroup
                 android:id="@+id/customViewGroup2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                app:isBlue="true"/>
 
             <com.example.james.helloworld2.CustomView
                 android:id="@+id/view1"
