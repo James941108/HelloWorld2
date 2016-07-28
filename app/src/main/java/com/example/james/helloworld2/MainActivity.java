@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             String result = data.getStringExtra("result");
             if (resultCode == RESULT_OK){
                 //Get data from data
-                Toast.makeText(this, result, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, result, Toast.LENGTH_LONG).show();
             }
         }
     }
@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_settings){
-            Toast.makeText(MainActivity.this, "Yooo!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Yooo!!!!", Toast.LENGTH_SHORT).show();
 
             return true;
         }
